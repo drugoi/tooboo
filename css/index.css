@@ -1,0 +1,99 @@
+body {
+  background: #242627 url(../img/tooboo-pattern.png) repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Open Sans',sans-serif,Arial;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+#e-select__day {
+  /* i */
+}
+
+#e-select__day > option {
+  /* i */
+}
+
+.b-ticket__wrapper {
+  top: 250px;
+  width: 870px;
+  height: 105px;
+  overflow: hidden;
+  margin: 0 auto;
+  top: 0;
+  position: relative;
+}
+
+.e-tooboo__logo--ticket {
+  display: block;
+  width: 210px;
+  height: 105px;
+  float: left;
+  background: rgba(0, 0, 0, 0) url(../img/tooboo-logo.png) no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: relative;
+  z-index: 9999;
+}
+
+.b-ticket__create {
+  background: url(../img/ticket.png);
+  float: left;
+  height: 68px;
+  position: relative;
+  top: 9px;
+  left: -125px;
+  padding-top: 22px;
+  width: 655px;
+}
+
+.b-create__line {
+  padding-left: 150px;
+}
+
+.b-create__line--first {
+  /* i */
+}
+
+.e-create__time {
+  font-size: 15px;
+}
+
+.e-time__select--day {
+  /* i */
+}
+
+.e-time__select--day > option {
+  /* i */
+}
+
+.e-hours__select {
+  /* i */
+}
+
+.e-hours__select--hour {
+  /* i */
+}
+
+.e-hours__select--minute {
+  /* i */
+}
+
+.b-create__line--second {
+  /* i */
+}
+
+.e-create__link {
+  font-size: 15px;
+}
+
+.e-create__link--url {
+  width: 250px;
+  border-radius: 6px;
+  border: 1px solid #646464;
+  background: #f8f7f7;
+}

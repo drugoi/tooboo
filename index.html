@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>TooBoo — сервис для совместного просмотра видео</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="b-ticket__wrapper">
+		<span class="e-tooboo__logo--ticket"></span>
+		<div class="b-ticket__create">
+			<div class="b-create__line b-create__line--first">
+				<span class="e-create__time">Укажите время сеанса</span>
+				<select name="e-select__day" class="e-time__select--day" id="e-select__day">
+					<option value="Сегодня">Сегодня</option>
+					<option value="Завтра">Завтра</option>
+				</select>
+				<input type="number" value="12" step="1" min="0" max="23" class="e-hours__select e-hours__select--hour">
+				<span class="e-hourse__select--divide">:</span>
+				<input type="number" value="00" step="15" min="00"max="59" class="e-hours__select e-hours__select--minute">
+			</div>
+			<div class="b-create__line b-create__line--second">
+				<span class="e-create__link">Вставьте ссылку на видео</span>
+				<input type="url" class="e-create__link--url">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

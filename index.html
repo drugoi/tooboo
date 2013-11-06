@@ -7,6 +7,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,600&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/index.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<div class="b-ticket__wrapper">
@@ -14,19 +15,31 @@
 		<div class="b-ticket__create">
 			<div class="b-create__line b-create__line--first">
 				<span class="e-create__time">Укажите время сеанса</span>
-				<select name="e-select__day" class="e-time__select--day" id="e-select__day">
-					<option value="Сегодня">Сегодня</option>
-					<option value="Завтра">Завтра</option>
-				</select>
-				<input type="number" value="12" step="1" min="0" max="23" class="e-hours__select e-hours__select--hour">
+				<div class="e-time__select--day">
+					<span class="e-day__select--title">Сегодня</span>
+					<div class="e-day__select">
+						<span class="e-time__select--item active">Сегодня</span>
+						<span class="e-time__select--item">Завтра</span>
+					</div>
+				</div>
+				<input type="number" value="12" oninput="maxLengthCheck(this);" step="1" maxlength="2" min="0" max="23" class="e-hours__select e-hours__select--hour">
 				<span class="e-hourse__select--divide">:</span>
-				<input type="number" value="00" step="15" min="00"max="59" class="e-hours__select e-hours__select--minute">
+				<input type="number" value="00" oninput="maxLengthCheck(this);" step="15" maxlength="2" min="00"max="59" class="e-hours__select e-hours__select--minute">
 			</div>
 			<div class="b-create__line b-create__line--second">
 				<span class="e-create__link">Вставьте ссылку на видео</span>
-				<input type="url" class="e-create__link--url">
+				<input type="url" placeholder="https://vk.com/video18467063_164952454" class="e-create__link--url">
 			</div>
 		</div>
 	</div>
+	<div class="b-social__buttons">
+		<a href="#!">
+			<span class="e-social__button e-social__button--vk"></span>
+		</a>
+		<a href="#!">
+			<span class="e-social__button e-social__button--twi"></span>
+		</a>
+	</div>
+	<span class="e-whois"></span>
 </body>
 </html>

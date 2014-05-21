@@ -1,0 +1,250 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+}
+html { height: 101%; } 
+body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; } 
+
+input { outline: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+body {
+  background: #242627 url(../img/tooboo-pattern.png) repeat;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Open Sans',sans-serif,Arial;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Block: Ticket */
+.e-day__select {
+  display: none;
+  float: left;
+  border: 1px solid #646464;
+  width: 110px;
+  z-index: 9999;
+  position: relative;
+  background: #FFF;
+  left: -21px;
+  top: 2px;
+}
+
+
+
+.b-ticket__wrapper {
+  top: 250px;
+  width: 740px;
+  height: 105px;
+  margin: 0 auto;
+  top: 0;
+  position: absolute;
+}
+
+.e-tooboo__logo--ticket {
+  display: block;
+  width: 260px;
+  height: 145px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0) url(../img/tooboo-logo.png) no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  position: relative;
+  top: -20px;
+  left: -20px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.e-tooboo__logo--ticket.activated {
+  cursor: default;
+}
+
+.b-ticket__create {
+  background: url(../img/ticket.png);
+  float: left;
+  height: 68px;
+  position: absolute;
+  top: 9px;
+  left: 18px;
+  padding-top: 22px;
+  width: 90px;
+  overflow: hidden;
+  display: none;
+}
+
+.b-create__line {
+  padding-left: 150px;
+}
+
+.b-create__line--first {
+  /* i */
+}
+
+.e-create__time {
+  font-size: 15px;
+  float: left;
+}
+
+.e-time__select--day {
+  border: 1px solid #646464;
+  /* i */
+  border-radius: 5px;
+  font-size: 13px;
+  color: #b7b7b7;
+  margin-left: 33px;
+  height: 17px;
+  line-height: 15px;
+  float: left;
+  position: relative;
+  top: 3px;
+  width: 80px;
+  padding: 0 10px 0 20px;
+  cursor: pointer;
+}
+
+.e-time__select--day:after {
+  content: '';
+  background: #DCDCDC url(../img/day-arrow.png) no-repeat center center;
+  width: 22px;
+  border-left: 1px solid #646464;
+  height: 17px;
+  display: block;
+  position: relative;
+  top: -15px;
+  left: 67px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.e-time__select--item.active,
+.e-time__select--item:hover {
+  background: #dcdcdc;
+  color: #FFF;
+}
+
+.e-time__select--item {
+  display: block;
+  text-align: center;
+  height: 20px;
+  cursor: pointer;
+  line-height: 20px;
+}
+
+.e-hours__select {
+  border: 1px solid #646464;
+  background: #F8F7F7;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  text-align: center;
+}
+
+.e-hours__select--hour {
+  margin-left: 10px;
+}
+
+.e-hours__select::-webkit-outer-spin-button,
+.e-hours__select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.e-hours__select--minute {
+  /* i */
+}
+
+.b-create__line--second {
+  /* i */
+}
+
+.e-create__link {
+  font-size: 15px;
+}
+
+.e-create__link--url {
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #646464;
+  margin-top: 4px;
+  margin-left: 5px;
+  padding-left: 10px;
+  position: absolute;
+  background: #f8f7f7;
+}
+
+/* End Block: Ticket */
+
+/* Block: Social Buttons */
+
+.b-social__buttons {
+  width: 100px;
+  height: 45px;
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
+
+.e-social__button {
+  width: 41px;
+  height: 43px;
+  float: left;
+  display: block;
+}
+
+.e-social__button--vk {
+  background: rgba(0, 0, 0, 0) url(../img/social_vk.png) no-repeat center center;
+}
+
+.e-social__button--vk:hover {
+  background: rgba(0, 0, 0, 0) url(../img/social_vk--hover.png) no-repeat center center;
+}
+
+.e-social__button--twi {
+  background: rgba(0, 0, 0, 0) url(../img/social_twi.png) no-repeat center center;
+  margin-left: 15px;
+}
+
+.e-social__button--twi:hover {
+  background: rgba(0, 0, 0, 0) url(../img/social_twi--hover.png) no-repeat center center;
+}
+
+/* End Block: Social Buttons */
+
+.e-whois {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background: #fcb602;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.e-whois:hover {
+  background: #FFF;
+}
